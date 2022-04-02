@@ -17,18 +17,24 @@
 
 n,m = map(int,input().split())
 s =[]
-lst =[]
 
-def dfs():
-    if len(s)==m:
 
-        print(' '.join(map(str,s)))
-        return
+def dfs(start):
     
-    for i in range(1,n+1):
+    if len(s)==m:
+        print(s)
+       
+        print(' '.join(map(str,s)))
+        
+
+        return 
+    
+    for i in range(start,n+1):
         if i not in s:
             s.append(i) #가장 처음 1이 들어감 그다음 2,3,4... 
-            dfs()
+            dfs(i+1)
             s.pop() #리스트의 맨 마지막 요소를 제함
+            
+            
  
-dfs()
+dfs(1)
