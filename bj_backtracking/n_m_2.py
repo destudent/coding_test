@@ -22,7 +22,7 @@ s =[]
 def dfs(start):
     
     if len(s)==m:
-        print(s)
+
        
         print(' '.join(map(str,s)))
         
@@ -32,7 +32,7 @@ def dfs(start):
     for i in range(start,n+1):
         if i not in s:
             s.append(i) #가장 처음 1이 들어감 그다음 2,3,4... 
-            dfs(i+1)
+            dfs()
             s.pop() #리스트의 맨 마지막 요소를 제함
             
             
