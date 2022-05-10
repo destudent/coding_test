@@ -25,7 +25,7 @@ numbers[1] = 1
 numbers[2] = 1
 
 def padoban(x):
-    if x == 100:
+    if x == 101:
         return
 
 

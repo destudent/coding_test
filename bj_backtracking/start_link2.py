@@ -48,6 +48,7 @@ def find_stat(start,link): #각 팀의 점수 합계
             #점수가 다 나옴
     
     stat.append(abs(start_stat-link_stat))#점수의 차이 append
+    #리스트에 넣을 필요 없이 갱신만 하면 됨
     
 
 
